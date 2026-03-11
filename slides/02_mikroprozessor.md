@@ -1,15 +1,9 @@
 ## Eine Übersicht
 
-1. a
-2. b
-3. c
+Y
 
 ---
 
 ## Noch eine Übersicht
 
-1. a
-2. b
-3. c
-
----
+X
