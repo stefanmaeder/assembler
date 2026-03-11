@@ -18,7 +18,11 @@ jobs:
 
       - name: Combine Markdown
         run: |
-          cat slides/[0-9]*.md > slides/slides.md
+          rm -f slides/slides.md
+          for file in slides/[0-9]*.md; do
+            cat "$file" >> slides/slides.md
+            echo -e "\n\n---\n\n" >> slides/slides.md
+          done
 
       - name: Upload Pages
         uses: actions/upload-pages-artifact@v3
