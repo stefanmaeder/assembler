@@ -19,9 +19,14 @@ jobs:
       - name: Combine Markdown
         run: |
           rm -f slides/slides.md
+          first=true
           for file in slides/[0-9]*.md; do
+            
+            if [ "$first" = false ]; then
+              echo -e "\n\n---\n\n" >> slides/slides.md
+            fi
             cat "$file" >> slides/slides.md
-            echo -e "\n\n---\n\n" >> slides/slides.md
+            first=false
           done
 
       - name: Upload Pages
