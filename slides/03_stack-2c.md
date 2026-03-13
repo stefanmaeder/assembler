@@ -14,6 +14,6 @@ flowchart LR
     
     C --> pop
 
-style C fill:#ffcccc,stroke:#cc0000,stroke-width:2px
+style C fill:#ddd,stroke:#888,color:#888,stroke-width:2px
 
 ```
