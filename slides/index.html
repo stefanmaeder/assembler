@@ -52,14 +52,25 @@
 </div>
 
 <script>
+
+  
+mermaid.initialize({ startOnLoad: true });
+
+  
 Reveal.initialize({
   progress: true,
   hash: true,
   plugins: [ RevealMarkdown ]
 });
 
-mermaid.initialize({ startOnLoad: true });
+  Reveal.on('ready', () => {
+  mermaid.init();
+});
 
+Reveal.on('slidechanged', () => {
+  mermaid.init();
+});
+  
 </script>
 
 </body>
