@@ -1,5 +1,3 @@
-## Informatik
-
 ```mermaid
 kanban
   id1[Technische Informatik]
