@@ -3,11 +3,11 @@
 ```mermaid
 kanban
   id1[Technische Informatik]
-    id11[Hardware von Computersystemen, z.B. Digitaltechnik, Prozessoren und Rechnerarchitektur]
+    id11[Hardware]
   id2[Theoretische Informatik]
-    id21[Mathematischen Grundlagen der Informatik, z.B. formale Sprachen, Automaten und Berechenbarkeit]
+    id21[Mathematik]
   id3[Praktische Informatik]
-    id31[Entwicklung von Software, z.B. Programmierung, Algorithmen und Betriebssystemen]
+    id31[Software]
   id4[Angewandte Informatik]
-    id41[Nutzt Informatik, um Probleme in anderen Bereichen zu lösen, z.B.Wirtschaft, Medizin oder Technik]
+    id41[Problemlösung]
 ```
