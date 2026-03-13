@@ -1,0 +1,3 @@
+## Einordnung
+
+- innerhalb Technische Informatik
