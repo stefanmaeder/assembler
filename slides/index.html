@@ -56,6 +56,13 @@
   
 mermaid.initialize({ startOnLoad: true });
 
+Reveal.on('slidechanged', () => {
+  mermaid.init();
+});
+
+Reveal.on('ready', () => {
+  mermaid.init();
+});
   
 Reveal.initialize({
   progress: true,
@@ -63,28 +70,7 @@ Reveal.initialize({
   plugins: [ RevealMarkdown ]
 });
 
-Reveal.on('ready', renderMermaid);
-Reveal.on('slidechanged', renderMermaid);
 
-function renderMermaid() {
-
-  document.querySelectorAll("code.language-mermaid").forEach(el => {
-
-    const parent = el.parentElement;
-
-    if (!parent.classList.contains("mermaid")) {
-      const div = document.createElement("div");
-      div.className = "mermaid";
-      div.textContent = el.textContent;
-
-      parent.replaceWith(div);
-    }
-
-  });
-
-  mermaid.init();
-}
-});
 </script>
 
 </body>
