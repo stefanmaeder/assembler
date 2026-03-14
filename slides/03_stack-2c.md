@@ -4,7 +4,7 @@ pop entfernt das oberste Element im Stack
 
 ```mermaid
 flowchart LR
-    pop["pop(Element3)"]
+    pop["pop()"]
     
     subgraph Stack
         C["Element3"]
