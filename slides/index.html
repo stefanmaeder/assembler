@@ -63,20 +63,14 @@ Reveal.initialize({
   plugins: [ RevealMarkdown ]
 });
 
-  Reveal.on('ready', () => {
-  mermaid.init();
-});
-
 Reveal.on('slidechanged', () => {
   mermaid.init();
 });
 
-Reveal.on('ready', event => {
-  mermaid.init(undefined, document.querySelectorAll('.mermaid'));
-});
-
-Reveal.on('slidechanged', event => {
-  mermaid.init(undefined, event.currentSlide.querySelectorAll('.mermaid'));
+Reveal.on('ready', () => {
+  document.querySelectorAll(".mermaid").forEach(el => {
+    mermaid.init(undefined, el);
+  });
 });
 </script>
 
