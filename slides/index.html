@@ -70,7 +70,14 @@ Reveal.initialize({
 Reveal.on('slidechanged', () => {
   mermaid.init();
 });
-  
+
+Reveal.on('ready', event => {
+  mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+});
+
+Reveal.on('slidechanged', event => {
+  mermaid.init(undefined, event.currentSlide.querySelectorAll('.mermaid'));
+});
 </script>
 
 </body>
