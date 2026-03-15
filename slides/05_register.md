@@ -4,4 +4,4 @@
 - Zwischenspeicherung von Daten, die die CPU sofort für Berechnungen braucht
 - schneller als RAM
 - entspricht nicht L1-,L2-,L3-Caches
-- Flags
+- Flag-Register: einzelnes Bit, das den Zustand der letzten Operation beschreibt
