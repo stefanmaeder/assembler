@@ -7,5 +7,5 @@ kanban
   id3[Praktische Informatik]
     id31[Programmierung]
   id4[Angewandte Informatik]
-    id41[Anwendung]
+    id41[Praxis]
 ```
