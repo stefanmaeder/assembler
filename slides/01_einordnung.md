@@ -5,7 +5,7 @@ kanban
   id2[Theoretische Informatik]
     id21[Mathematik]
   id3[Praktische Informatik]
-    id31[Software]
+    id31[Programmierung]
   id4[Angewandte Informatik]
-    id41[Problemlösung]
+    id41[Anwendung]
 ```
